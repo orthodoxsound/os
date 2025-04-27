@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #59191F;
+    color: #fff;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #59191F;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #ffc30b;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  /* Golden Shining Effect */
+  .logo span {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffc30b, #fff, #ffc30b);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 200% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
+  }
+  
+  .cross-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Main Section */
+  #main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  
+  .content {
+    max-width: 800px;
+  }
+  
+  /* Text inside Main */
+  .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .social-icons a {
+    font-size: 36px;
+    color: #ffc30b;
+    background: #80242c;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    background: #a83641;
+    transform: scale(1.2);
+  }
+  
+  /* Fade In Animation */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 36px;
+    }
+  
+    .social-icons a {
+      font-size: 28px;
+      padding: 12px;
+    }
+  }
+  
