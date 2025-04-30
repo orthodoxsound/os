@@ -133,3 +133,17 @@
     }
   }
   
+  /* Discord Info Box */
+.discord-box {
+  margin-top: 40px;
+  padding: 15px 25px;
+  background-color: #80242c;
+  border: 2px solid #ffc30b;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #ffc30b;
+  white-space: pre-line;
+  display: inline-block;
+  animation: fadeIn 2s ease forwards;
+  box-shadow: 0 0 10px #ffc30b88;
+}
