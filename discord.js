@@ -1,4 +1,4 @@
-fetch('https://orthodoxsound.github.io/os//server-info') // replace with your real domain when deployed
+fetch('https://orthodox-sound-api.onrender.com/server-info') // replace with your real domain when deployed
   .then(res => res.json())
   .then(data => {
     document.getElementById('discord-info').innerText =
