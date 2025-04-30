@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/server-info') // replace with your real domain when deployed
+fetch('https://orthodoxsound.github.io/os//server-info') // replace with your real domain when deployed
   .then(res => res.json())
   .then(data => {
     document.getElementById('discord-info').innerText =
