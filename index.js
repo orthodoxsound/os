@@ -1,7 +1,11 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const cors = require('cors'); // Import the cors package
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(cors()); // Enable CORS for all routes
 
 app.get('/server-info', async (req, res) => {
   try {
